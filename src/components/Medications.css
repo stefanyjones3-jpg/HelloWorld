@@ -1,0 +1,141 @@
+.med-progress {
+  margin-bottom: 16px;
+}
+
+.progress-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.progress-bar-bg {
+  height: 12px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.notif-banner {
+  width: 100%;
+  background: var(--warning-light);
+  border: 2px solid var(--warning);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9a6000;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 16px;
+  font-family: inherit;
+}
+
+.med-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.med-card {
+  padding: 18px 20px;
+}
+
+.med-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.med-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--med-color);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.med-info {
+  flex: 1;
+}
+
+.med-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.med-dose {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.med-instructions {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.delete-btn:hover {
+  background: var(--danger-light);
+  color: var(--danger);
+}
+
+.med-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--med-color);
+  background: white;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: inherit;
+  min-width: 90px;
+}
+
+.time-pill.taken {
+  background: var(--success-light);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.pill-sub {
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.75;
+  margin-top: 2px;
+}

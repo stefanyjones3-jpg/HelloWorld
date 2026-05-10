@@ -1,0 +1,127 @@
+.home-page {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.greeting-card {
+  background: linear-gradient(135deg, #4A90D9 0%, #357ABD 100%);
+  border-radius: 20px;
+  padding: 28px 24px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(74, 144, 217, 0.35);
+}
+
+.greeting-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.greeting-name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.clock {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ampm {
+  font-size: 1.4rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.date-display {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 8px;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.quick-link-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 16px;
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.18s;
+  box-shadow: var(--shadow);
+  font-family: inherit;
+}
+
+.quick-link-btn:hover, .quick-link-btn:active {
+  border-color: var(--link-color);
+  background: color-mix(in srgb, var(--link-color) 8%, white);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.quick-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.quick-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Daily Note */
+.daily-note {
+  background: var(--surface);
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.edit-btn {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.note-content {
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.note-textarea {
+  resize: none;
+  font-family: inherit;
+  line-height: 1.6;
+}
